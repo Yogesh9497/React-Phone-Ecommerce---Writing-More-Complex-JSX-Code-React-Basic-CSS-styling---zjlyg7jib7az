@@ -11,7 +11,16 @@ export default class ProductList extends Component {
   render() {
     return (
       <React.Fragment>
-        START HACKING
+        <div className="container">
+          <h1 className="text-center p-3"> <strong>our products</strong> </h1>
+          <div className="row">
+            {this.state.products.map((data,idx)=>{
+              return(
+                <Product key={idx} data={data} />
+              )
+            })}
+          </div>
+        </div>
       </React.Fragment>
     );
   }

@@ -4,7 +4,8 @@ export default class CartList extends Component {
   render() {
    
     return (
-      <div></div>
+      <div className="row">
+      </div>
     );
   }
 }
